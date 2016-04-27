@@ -1,0 +1,13 @@
+<html class = "container">
+<div class = "container">
+<h1 class = "write_title Mont" style="margin-top:50px">Successfully completed!</h1>
+<% @every_post.each do |p| %>
+Title: <%= p.title %> <br>
+Receiver: <%= p.email %> <br>
+Content: <%= p.content %> <br>
+Time: <%= p.created_at %>
+<hr>
+<% end %>
+<h3><a href = "/">To Home</a></h3>
+</div>
+</html>
